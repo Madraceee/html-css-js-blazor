@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flex</title>
+</head>
+<body>
+    <h3>Flex Wrap</h3>
+    <select name="direction" id="dirBtn">
+        <option value="row">row</option>
+        <option value="column">column</option>
+    </select>
+    <select name="wrap" id="wrapBtn">
+        <option value="nowrap">nowrap</option>
+        <option value="wrap">wrap</option>
+        <option value="wrap-reverse">wrap-reverse</option>
+    </select>
+    <div class="container1" id="c1">
+        <div class="flex-item item-1">Item 1</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div>
+        <div class="flex-item item-5">Item 5</div>
+        <div class="flex-item item-6">Item 6</div>
+        <div class="flex-item item-7">Item 7</div> 
+        <div class="flex-item item-8">Item 8</div>
+        <div class="flex-item item-9">Item 9</div>
+    </div>
+    <br>
+    <br>
+    <h3>flex-flow -> flex-direction flex-wrap (any combination)</h3>
+    <br>
+    <br>
+
+    <h3>Row and column GAP</h3>
+    <label for="">Column</label>
+    <input type="number" name="colGap" id="colGap" placeholder="Column Gap">
+    <label for="">Row</label>
+    <input type="number" name="rowGap" id="rowGap" placeholder="Row Gap">
+    <div class="container2" id="c2">
+        <div class="flex-item item-1">Item 1</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div>
+        <div class="flex-item item-5">Item 5</div>
+        <div class="flex-item item-6">Item 6</div>
+        <div class="flex-item item-7">Item 7</div> 
+        <div class="flex-item item-8">Item 8</div>
+        <div class="flex-item item-9">Item 9</div>
+        <div class="flex-item item-1">Item 1</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div>
+        <div class="flex-item item-5">Item 5</div>
+        <div class="flex-item item-6">Item 6</div>
+        <div class="flex-item item-7">Item 7</div> 
+        <div class="flex-item item-8">Item 8</div>
+        <div class="flex-item item-9">Item 9</div>        
+    </div>
+    <br>
+    <h3>gap -> row-gap column-gap</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>justify-contents -> flex-start | flex-end | center | space-between | space-around | space-evenly</h3>
+    <br>
+    <br>
+    <h3>Align Items</h3>
+    <select name="alignItm" id="alignItm">
+        <option value="strech">strech</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center">center</option>
+    </select>
+    <div class="container3" id="c3">
+        <div class="flex-item item-1">Item 1</div>
+        <div class="flex-item item-2">Item 2</div>
+        <div class="flex-item item-3">Item 3</div>
+        <div class="flex-item item-4">Item 4</div>
+        <div class="flex-item item-5">Item 5</div>       
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>ALign Content</h3>
+    <select name="alignContent" id="alignContent">
+        <option value="strech">strech</option>
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center">center</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>        
+    </select>
+    <div class="container4" id="c4">
+        <div class="flex-item item-1 big">Item 1</div>
+        <div class="flex-item item-2 big">Item 2</div>
+        <div class="flex-item item-3 big">Item 3</div>
+        <div class="flex-item item-4 big">Item 4</div>
+        <div class="flex-item item-5 big">Item 5</div>       
+    </div>
+    <script src="flex.js"></script>
+</body>
+</html>
